@@ -1,0 +1,11 @@
+---
+- name: hello world
+  hosts: localhost
+  tasks:
+  - name: Hello Message
+    debug:
+      msg: "Hello World!"
+  - name: create file
+    file:
+     path: /tmp/test
+     state: touch
